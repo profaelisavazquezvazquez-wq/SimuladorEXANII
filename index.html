@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Simulador EXANI I</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="inicio">
+
+<img src="logo.png" class="logo">
+
+<h1>Centro de Regularización y Preparación Académica</h1>
+
+<h2>Simulador de Ingreso al Bachillerato</h2>
+
+<input
+type="text"
+id="nombre"
+placeholder="Nombre completo del alumno">
+
+<div class="info">
+
+<p>20 Reactivos</p>
+<p>Tiempo: 20 minutos</p>
+
+</div>
+
+<button onclick="iniciar()">
+INICIAR EXAMEN
+</button>
+
+</div>
+
+<div id="quiz" style="display:none;">
+
+<div class="header">
+
+<img src="logo.png" class="logo-mini">
+
+<div id="timer"></div>
+
+</div>
+
+<div class="barra">
+
+<div id="avance"></div>
+
+</div>
+
+<div id="progreso"></div>
+
+<h2 id="pregunta"></h2>
+
+<div id="opciones"></div>
+
+<div class="botones">
+
+<button onclick="anterior()">
+Anterior
+</button>
+
+<button onclick="siguiente()">
+Siguiente
+</button>
+
+</div>
+
+</div>
+
+<div id="resultado" style="display:none;"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
